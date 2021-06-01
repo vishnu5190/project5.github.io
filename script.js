@@ -85,7 +85,7 @@ holdBtn.addEventListener('click' , function(){
           
            document.querySelector(`#score--${activePlayer}`).textContent = scores[activePlayer]
           
-             if (scores[activePlayer] >= 10){
+             if (scores[activePlayer] >= 100){
                  playing = false ; 
                  document.querySelector('#audio3').play()
                  document.querySelector(`.player--${activePlayer}`).classList.add('player--winner');
