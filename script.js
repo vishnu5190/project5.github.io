@@ -1,5 +1,6 @@
 'use strict';
 
+document.querySelector('.lastbox').style['z-index'] = "3";
  document.querySelector('.lastbox').style['visibility'] = "hidden";
 
 // const randomsNumber = Math.floor(Math.random() * 6 ) + 1 ;
@@ -94,8 +95,7 @@ holdBtn.addEventListener('click' , function(){
                  document.querySelector(`.player--${activePlayer}`).classList.remove('player--active');
                  diceEl.classList.add('hidden')
                  document.querySelector('.lastClassItem').textContent = `Player ${activePlayer + 1}  won`
-                 //document.querySelector('.lastbox').classList.add('overlay')
-                 document.querySelector('.lastbox').style['z-index'] = "3";
+                 
               document.querySelector('.lastbox').style['visibility'] = "visible";
 
                   
@@ -122,8 +122,6 @@ holdBtn.addEventListener('click' , function(){
 
 newBtn.addEventListener('click' , function(){
     document.querySelector('#audio4').play()
-    //document.querySelector('.
- ').classList.remove('overlay')
  document.querySelector('.lastbox').style['visibility'] = "hidden";
      score0El.textContent = 0 ;
      score1El.textContent = 0 ;
