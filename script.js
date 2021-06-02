@@ -92,7 +92,8 @@ holdBtn.addEventListener('click' , function(){
                  document.querySelector(`.player--${activePlayer}`).classList.remove('player--active');
                  diceEl.classList.add('hidden')
                  document.querySelector('.lastClassItem').textContent = `Player ${activePlayer + 1}  won`
-                 document.querySelector('.lastbox').classList.add('overlay')
+                 //document.querySelector('.lastbox').classList.add('overlay')
+                 document.querySelector('.lastbox').style['z-index'] = "3";
 
                   
                  
@@ -118,7 +119,8 @@ holdBtn.addEventListener('click' , function(){
 
 newBtn.addEventListener('click' , function(){
     document.querySelector('#audio4').play()
-    document.querySelector('.lastbox').classList.remove('overlay')
+    //document.querySelector('.lastbox').classList.remove('overlay')
+ document.querySelector('.lastbox').style['z-index'] = '-1';
      score0El.textContent = 0 ;
      score1El.textContent = 0 ;
      current0El .textContent = 0 ;
