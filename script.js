@@ -1,5 +1,7 @@
 'use strict';
 
+ document.querySelector('.lastbox').style['visibility'] = "hidden";
+
 // const randomsNumber = Math.floor(Math.random() * 6 ) + 1 ;
 
 const player0El = document.querySelector('.player--0');
@@ -94,6 +96,7 @@ holdBtn.addEventListener('click' , function(){
                  document.querySelector('.lastClassItem').textContent = `Player ${activePlayer + 1}  won`
                  //document.querySelector('.lastbox').classList.add('overlay')
                  document.querySelector('.lastbox').style['z-index'] = "3";
+              document.querySelector('.lastbox').style['visibility'] = "visible";
 
                   
                  
@@ -119,8 +122,9 @@ holdBtn.addEventListener('click' , function(){
 
 newBtn.addEventListener('click' , function(){
     document.querySelector('#audio4').play()
-    //document.querySelector('.lastbox').classList.remove('overlay')
- document.querySelector('.lastbox').style['z-index'] = '-1';
+    //document.querySelector('.
+ ').classList.remove('overlay')
+ document.querySelector('.lastbox').style['visibility'] = "hidden";
      score0El.textContent = 0 ;
      score1El.textContent = 0 ;
      current0El .textContent = 0 ;
